@@ -9,7 +9,7 @@ function renderTableOfContents (data) {
   ## TABLE OF CONTENTS   
   ++++++++++++++++++<br>
   ${content.join("")}
-  [QUESTIONS](#QUESTIONS)
+  [QUESTIONS](#questions)
   `;
 };
 
