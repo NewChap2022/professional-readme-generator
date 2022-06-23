@@ -75,9 +75,9 @@ function renderLicenseSection(license) {
   if (!license) {
     return '';
   } else {
-    return `## LICENSE
-    This application is covered under License ${license}<br>`;
-  };
+  return `## LICENSE
+  This application is covered under License ${license}.<br>`;
+  }
 };
 
 
@@ -96,8 +96,8 @@ function generateMarkdown(data) {
   ${renderLicenseSection(license)}
   ${renderLicenseLink(license)}
   ## QUESTIONS
-  For more applications, please refer to [my GitHub](https://github.com/${github}).   
-  For questions, please check usage documentation for reference.   
+  For more applications, please refer to [my GitHub](https://github.com/${github}).<br>
+  For questions, please check usage documentation for reference.<br>
   If the question is still unsolved, please send it to *${email}* and I will get back to you ASAP.
 `;
 }
