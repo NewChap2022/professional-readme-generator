@@ -5,9 +5,9 @@ function renderTableOfContents (data) {
     return `[${section.toUpperCase()}](#${section})<br>`
   })
   return `  
-  ++++++++++++++++++   
+  +++++++++++++++++++++   
   ## TABLE OF CONTENTS   
-  ++++++++++++++++++<br>
+  +++++++++++++++++++++<br>
   ${content.join("")}
   [QUESTIONS](#questions)
   `;
@@ -54,17 +54,17 @@ function renderLicenseLink(license) {
   } else {
     switch (license) {
       case 'Apache 2.0':
-        return `[Click Here to View the License Statement](https://opensource.org/licenses/Apache-2.0)<br>`;
+        return `  [Click Here to View the License Statement](https://opensource.org/licenses/Apache-2.0)<br>`;
       case 'BSD 3':
-        return `[Click Here to View the License Statement](https://opensource.org/licenses/BSD-3-Clause)<br>`;
+        return `  [Click Here to View the License Statement](https://opensource.org/licenses/BSD-3-Clause)<br>`;
       case 'GPL':
-        return `[Click Here to View the License Statement](https://www.gnu.org/licenses/gpl-3.0.en.html)<br>`;
+        return `  [Click Here to View the License Statement](https://www.gnu.org/licenses/gpl-3.0.en.html)<br>`;
       case 'LGPL':
-        return `[Click Here to View the License Statement](https://www.gnu.org/licenses/lgpl-3.0.en.html)<br>`;
+        return `  [Click Here to View the License Statement](https://www.gnu.org/licenses/lgpl-3.0.en.html)<br>`;
       case 'MIT':
-        return '[Click Here to View the License Statement](https://opensource.org/licenses/MIT)<br>';
+        return '  [Click Here to View the License Statement](https://opensource.org/licenses/MIT)<br>';
       case 'Mozilla Public License 2.0':
-        return '[Click Here to View the License Statement](https://opensource.org/licenses/MPL-2.0)<br>';
+        return '  [Click Here to View the License Statement](https://opensource.org/licenses/MPL-2.0)<br>';
     };
   }
 }
@@ -88,7 +88,7 @@ function generateMarkdown(data) {
   ${renderLicenseBadge(license)}
   ${renderTableOfContents(data)}
   ## DESCRIPTION
-  ${data.description}
+    ${data.description}
   ${renderOtherSections(others,'installation')}
   ${renderOtherSections(others,'usage')}
   ${renderOtherSections(others,'contribution')}
