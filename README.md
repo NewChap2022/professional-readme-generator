@@ -13,7 +13,7 @@ create a generator to create professional README.md for a project
 - [x] When a user I clicks on the links in the Table of Contents, he/she will be taken to the corresponding section of the README
 
 ## Language used
-Javascript
+Node.js
 
 ## Reflection
 Using node.js to program the application, the debugging process is slightly from using browser. But the knowledge before helps me to consider the code in more comprehensive way. 
